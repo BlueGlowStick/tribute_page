@@ -4,20 +4,33 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<!-- Fade the picture in upon page load -->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#tedpic").hide();
+			$("#tedpic").fadeIn("slow");
+		});
+	</script>
+
 </head>
 <body>
-<div class="row">
-	<div class="col-xs-2 col-md-3">
-	</div>
-	<div class="col-xs-8 col-md-6 text-center">
-		<h1 style="font-family:Raleway;">Ted Chiang Test</h1>
-		<br>
-		<h3>A visionary author of mathematical and science fiction.</h3>
-		<img class="img-responsive center-block" height="300" width="300" src="TedChiang.jpg" alt="Picture of Ted Chiang">
-	</div>
-	<div class="col-xs-2 col-md-3">
+<div class="jumbotron">
+	<div class="row">
+		<div class="col-xs-8 col-xs-offset-2 col-md-8 col-md-offset-0 text-center">
+			<h1 style="font-family:Raleway;">Ted Chiang</h1>
+			<br>
+			<h2 style="font-family:Raleway;">A visionary author of mathematical and science fiction.</h2>
+			<blockquote class="hidden-xs"><p style="font-family:Raleway;"><i>"...through the act of reading my words, the patterns that form your thoughts become an imitation of the patterns that once formed mine. And in that way I live again, through you."</i></p></blockquote> 
+		</div>
+		<div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-0">
+			<img class="img-responsive center-block" id="tedpic" height="300" width="300" src="TedChiang.jpg" alt="Picture of Ted Chiang">
+		</div>
 	</div>
 </div>
+
+<!-- Alter below to use offsets rather than column fuckery -->
+
 <div class="row">
 	<div class="col-xs-2 col-sm-3 col-md-4">
 	</div>
